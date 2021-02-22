@@ -33,7 +33,7 @@ package main
 //输入：nums = [4,2,2,2,4,4,2,2], limit = 0
 //输出：3
 
-
+//队列存储各个窗口的最大最小值
 func longestSubarray(nums []int, limit int) (ans int) {
 	var minQ , maxQ []int
 
@@ -61,16 +61,7 @@ func longestSubarray(nums []int, limit int) (ans int) {
 			l++
 		}
 		ans = max(ans, r - l +1)
-
 	}
-
 
 	return
-}
-
-func max(a ,b int) int {
-	if a > b {
-		return a
-	}
-	return b
 }
