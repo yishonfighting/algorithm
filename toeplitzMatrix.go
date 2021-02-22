@@ -39,6 +39,7 @@ package main
 
 func isToeplitzMatrix(matrix [][]int) bool {
 
+	// 确保每个元素跟左上角的那个元素相同即可
 	il := len(matrix)
 	jl := len(matrix[0])
 
