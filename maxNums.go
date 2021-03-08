@@ -7,6 +7,7 @@ package main
 //解释：连续子数组 [4,-1,2,1] 的和最大，为 6 。
 
 func maxSubArray(nums []int) int {
+	// 动态规划，也可以采用类似滑动窗口来处理，但是会有重复计算可能
 	l, max := len(nums), nums[0]
 
 	for i := 1; i < l; i++ {
