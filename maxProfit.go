@@ -12,14 +12,15 @@ package main
 //     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
 
 func maxProfit(prices []int) int {
-	l := len(prices)
-	s := prices[0]
-	max := 0
-	for i := 1; i < l; i++ {
-		if prices[i] < s {
-			s = prices[i]
-		} else if prices[i]-s > max {
-			max = prices[i] - s
+	s, max := prices[0], 0
+	for i := 1; i < len(prices); i++ {
+		cur := prices[i]
+		if cur < s {
+			s = cur
+			continue
+		}
+		if cur-s > max {
+			max = cur - s
 		}
 	}
 	return max
