@@ -18,7 +18,6 @@ package main
 
 func twoSum2(numbers []int, target int) []int {
 	l := len(numbers)
-
 	lv, rl := 0, l-1
 
 	for lv < rl {
