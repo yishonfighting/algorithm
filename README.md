@@ -1,2 +1,7 @@
-# algorithm
-The beauty of algorithms
+# the beauty of algorithm
+
+```
+记录了一些自己平时有实现的一些算法题的代码实现，等待积攒到一定量之后会对这些算法题进行分类汇总
+```
+
+未完待续。。。
